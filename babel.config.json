@@ -1,0 +1,24 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    [
+      "@babel/preset-react",
+      {
+        "pragma": "MyReact.createElement"
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "auto-import",
+      {
+        "declarations": [
+          {
+            "default": "MyReact",
+            "path": "./core/MyReact"
+          }
+        ]
+      }
+    ]
+  ]
+}
